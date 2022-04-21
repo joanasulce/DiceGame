@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="game-panel">
+
+        <div id="player-0-panel" class="player-panel active-player">
+          <h1 class="player-name">Player 1</h1>
+          <span id="player-0-global" class="player-global-score">0</span>
+          <div class="current">
+            <h2>Current</h2>
+            <span id="player-0-current" class="current-score">0</span>
+          </div>
+        </div>
+  
+        <div id="player-1-panel" class="player-panel">
+          <h1 class="player-name">Player 2</h1>
+          <span id="player-1-global" class="player-global-score">0</span>
+          <div class="current">
+            <h2>Current</h2>
+            <span id="player-1-current" class="current-score">0</span>
+          </div>
+        </div>
+  
+        <span id="new-game-btn" class="new-game">New Game</span>
+        <img id="dice-1" class="dice" src="img/die1.png" alt="Dice">
+        <img id="dice-2" class="dice" src="img/die1.png" alt="Dice">
+
+        <span id="roll-dice-btn" class="roll-dice">Roll Dice</span>
+        <span id="hold-score-btn" class="hold-score">Hold Score</span>
+        <div class="max-score">
+          <p>Max Score</p>
+          <input id="max-score-input" class="max-score-input" type="number">
+          <button type="submit" name="button"></button>
+        </div>
+      </section>
+  
+      <audio id="victory-sound" style="display: none;">
+        <source src="img/audio_winning_sound_effect.mp3" type="audio/mp3">
+      </audio>
+  
+      <script src="app.js"></script>
+</body>
+</html>
